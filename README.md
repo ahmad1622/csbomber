@@ -12,7 +12,7 @@ SMS &amp; Call bomber for Iranian Phone Numbers
 <h2>💿 Installation</h2>
 
 ```
-git clone https://github.com/ahmad1622/csbomber
+git clone https://github.com/ahmad1622/csbomber.git
 ```
 ```
 cd csbomber
