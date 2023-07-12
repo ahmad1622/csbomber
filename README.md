@@ -12,19 +12,19 @@ SMS &amp; Call bomber for Iranian Phone Numbers
 <h2>💿 Installation</h2>
 
 ```
- git clone https://github.com/ahmad1622/csbomber
+git clone https://github.com/ahmad1622/csbomber
 ```
 ```
- cd csbomber
+cd csbomber
 ```
 ```
- pip install -i req.txt
+pip install -i req.txt
 ```
 
 <h2>💻 Script Run</h2>
 
 ```
- python bomber.py
+python bomber.py
 ```
 <h2>💣 Usage</h2>
 
