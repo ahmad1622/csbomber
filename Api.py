@@ -2,7 +2,7 @@ import json
 from time import sleep
 from random import choice
 from requests import get, post
-from user_agent import generate_user_agent
+#from user_agent import generate_user_agent
 
 class sms:
     def behtarino(phone):
