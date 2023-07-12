@@ -71,9 +71,9 @@ print("\n" + Fore.RESET)
 sleep(0.2)
 print(Fore.CYAN +  " Name App : SMS, CALL BOMBER ; | App Version : 1.00.00 ; | More : 100 Api ;")
 sleep(0.2)
-print(Fore.GREEN + " Developed By Ahmad Samad Pour" + Fore.BLACK)
+print(Fore.GREEN + " >>>>> Developed By Ahmad Samad Pour <<<<<" + Fore.BLACK)
 sleep(0.2)
-print(Fore.LIGHTYELLOW_EX + " GitHub : https://github.com/ahmad1622")
+print(Fore.LIGHTYELLOW_EX + " Telegram : @AhmadSP_1384 | GitHub : https://github.com/ahmad1622")
 print("\n\n")
 
 SMS_SERVICES = list(i[0] for i in getmembers(sms, isfunction))
@@ -224,8 +224,8 @@ if __name__ == "__main__":
     
     bombing2()
     print(" Complte Sms Bombing ... ")
-    print(" Developed By Ahmad Samad Pour")
-    print(" GitHub : https://github.com/ahmad1622")
+    print(" >>>>> Developed By Ahmad Samad Pour <<<<<")
+    print(" Telegram : @AhmadSP_1384 | GitHub : https://github.com/ahmad1622")
     print(" Exiting ...")
 
 
