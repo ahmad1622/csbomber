@@ -17,13 +17,13 @@ except:
 
 system("pip install user-agent" or "pip3 install user-agent")
 #Start
-system("cls" or "clear")
+system("clear")
 print("\n Starting SMS, CALL BOMBER ... ")
 sleep(5)
-system("cls" or "clear")
+system("clear")
 print("\n Loading ...")
 sleep(3)
-system("cls" or "clear")
+system("clear")
 
 print(Fore.CYAN +"\n")
 sleep(2)
@@ -215,10 +215,10 @@ if __name__ == "__main__":
     bombing(phone=num,count=yy)
     number= num[1:11]
     sleep(3)
-    system("cls" or "clear")
+    system("clear")
     print(" Starting Bombing 2 ...\n")
     sleep(1)
-    system("cls" or "clear")
+    system("clear")
     print(" >>> Phone Number : " + num)
     print(" >>> Round : "+ str(yy))
     
