@@ -1,6 +1,6 @@
 try: 
      from threading import Thread
-     from Api import sms, call
+     #from Api import sms, call
      from time import sleep
      from inspect import getmembers, isfunction 
      from os import system, name
