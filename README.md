@@ -61,9 +61,6 @@ git clone https://github.com/ahmad1622/csbomber.git
 ```
 cd csbomber
 ```
-```
-pip install -i req.txt
-```
 
 <h2>💻 Script Run</h2>
 
