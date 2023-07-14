@@ -58,12 +58,12 @@ pip install user-agent
 ```
 git clone https://github.com/ahmad1622/csbomber.git
 ```
-```
-cd csbomber
-```
 
 <h2>💻 Script Run</h2>
 
+```
+cd csbomber
+```
 ```
 python bomber.py
 ```
