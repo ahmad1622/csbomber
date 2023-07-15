@@ -77,7 +77,7 @@ sleep(0.2)
 print(Fore.LIGHTYELLOW_EX + " GitHub : https://github.com/ahmad1622")
 print("\n")
 
-print(" "+platform.uname())
+print(platform.uname())
 
 print("\n")
 
