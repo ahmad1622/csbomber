@@ -7,6 +7,7 @@ try:
      from colorama import * 
      import random
      import requests
+     import platform
 except:
      from os import system, name
      print("Not install Package . Installing Package . Connect To Internet ")
@@ -14,26 +15,26 @@ except:
      system("pip install api" or "pip3 install api")
      system("pip install colorama" or "pip3 install colorama")
      system("pip install requests" or "pip3 install requests")
+     system("pip install user-agent" or "pip3 install user-agent")
 
-system("pip install user-agent" or "pip3 install user-agent")
 #Start
-system("clear")
+system("cls" or "clear")
 print("\n Starting SMS, CALL BOMBER ... ")
-sleep(5)
-system("clear")
+sleep(2)
+system("cls" or "clear")
 print("\n Loading ...")
-sleep(3)
-system("clear")
+sleep(1)
+system("cls" or "clear")
 
 print(Fore.CYAN +"\n")
-sleep(2)
-print("  ██████╗ ███╗   ███╗  ██████╗        █████╗   █████╗  ██╗      ██╗     ")
 sleep(0.2)
-print(" ██╔════╝ ████╗ ████║ ██╔════╝       ██╔══██╗ ██╔══██╗ ██║      ██║     ")
+print("  ██████╗ ███╗   ███╗  ██████╗        █████╗   █████╗  ██╗      ██╗")
 sleep(0.2)
-print(" ╚█████╗  ██╔████╔██║ ╚█████╗        ██║  ╚═╝ ███████║ ██║      ██║     ")
+print(" ██╔════╝ ████╗ ████║ ██╔════╝       ██╔══██╗ ██╔══██╗ ██║      ██║")
 sleep(0.2)
-print("  ╚═══██╗ ██║╚██╔╝██║  ╚═══██╗  ██╗  ██║  ██╗ ██╔══██║ ██║      ██║     ")
+print(" ╚█████╗  ██╔████╔██║ ╚█████╗        ██║  ╚═╝ ███████║ ██║      ██║")
+sleep(0.2)
+print("  ╚═══██╗ ██║╚██╔╝██║  ╚═══██╗  ██╗  ██║  ██╗ ██╔══██║ ██║      ██║")
 sleep(0.2)
 print(" ██████╔╝ ██║ ╚═╝ ██║ ██████╔╝  ╚█║  ╚█████╔╝ ██║  ██║ ███████╗ ███████╗")
 sleep(0.2)
@@ -41,7 +42,7 @@ print(" ╚═════╝  ╚═╝     ╚═╝ ╚═════╝    
 sleep(0.2)
 print(Fore.MAGENTA +"")
 sleep(0.2)
-print("        ██████╗   █████╗  ███╗   ███╗ ██████╗  ███████╗ ██████╗ ")
+print("        ██████╗   █████╗  ███╗   ███╗ ██████╗  ███████╗ ██████╗")
 sleep(0.2)
 print("        ██╔══██╗ ██╔══██╗ ████╗ ████║ ██╔══██╗ ██╔════╝ ██╔══██╗")
 sleep(0.2)
@@ -55,7 +56,7 @@ print("        ╚═════╝   ╚════╝  ╚═╝     ╚═�
 sleep(0.2)
 print(Fore.YELLOW +"")
 sleep(0.2)
-print("            █████╗  ██╗  ██╗ ███╗   ███╗  █████╗  ██████╗ ")
+print("            █████╗  ██╗  ██╗ ███╗   ███╗  █████╗  ██████╗")
 sleep(0.2)
 print("           ██╔══██╗ ██║  ██║ ████╗ ████║ ██╔══██╗ ██╔══██╗")
 sleep(0.2)
@@ -65,16 +66,21 @@ print("           ██╔══██║ ██╔══██║ ██║╚
 sleep(0.2)
 print("           ██║  ██║ ██║  ██║ ██║ ╚═╝ ██║ ██║  ██║ ██████╔╝")
 sleep(0.2)
-print("           ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝     ╚═╝ ╚═╝  ╚═╝ ╚═════╝ ")
+print("           ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝     ╚═╝ ╚═╝  ╚═╝ ╚═════╝")
 sleep(0.2)
 print("\n" + Fore.RESET)
 sleep(0.2)
 print(Fore.CYAN +  " Name App : SMS, CALL BOMBER ; | App Version : 1.00.00 ; | More : 100 Api ;")
 sleep(0.2)
-print(Fore.GREEN + " >>>>> Developed By Ahmad Samad Pour <<<<<" + Fore.BLACK)
+print(Fore.GREEN + " Developed By Ahmad Samad Pour" + Fore.BLACK)
 sleep(0.2)
-print(Fore.LIGHTYELLOW_EX + " Telegram : @AhmadSP_1384 | GitHub : https://github.com/ahmad1622")
-print("\n\n")
+print(Fore.LIGHTYELLOW_EX + " GitHub : https://github.com/ahmad1622")
+print("\n")
+
+print(" "+platform.uname())
+
+print("\n")
+
 
 SMS_SERVICES = list(i[0] for i in getmembers(sms, isfunction))
 CALL_SERVICES = list(i[0] for i in getmembers(call, isfunction))
@@ -215,17 +221,17 @@ if __name__ == "__main__":
     bombing(phone=num,count=yy)
     number= num[1:11]
     sleep(3)
-    system("clear")
+    system("cls" or "clear")
     print(" Starting Bombing 2 ...\n")
     sleep(1)
-    system("clear")
+    system("cls" or "clear")
     print(" >>> Phone Number : " + num)
     print(" >>> Round : "+ str(yy))
     
     bombing2()
     print(" Complte Sms Bombing ... ")
-    print(" >>>>> Developed By Ahmad Samad Pour <<<<<")
-    print(" Telegram : @AhmadSP_1384 | GitHub : https://github.com/ahmad1622")
+    print(" Developed By Ahmad Samad Pour")
+    print(" GitHub : https://github.com/ahmad1622")
     print(" Exiting ...")
 
 
