@@ -7,7 +7,10 @@ try:
      from colorama import * 
      import random
      import requests
-     import platform
+     import uuid
+     import datetime
+     import jdatetime
+
 except:
      from os import system, name
      print("Not install Package . Installing Package . Connect To Internet ")
@@ -16,15 +19,46 @@ except:
      system("pip install colorama" or "pip3 install colorama")
      system("pip install requests" or "pip3 install requests")
      system("pip install user-agent" or "pip3 install user-agent")
+     system("pip install jdatetime" or "pip3 install jdatetime")
+
+# git auto uptate
+gitversion = 2
+newv = requests.get("http://sharabiyan-goose.ir/csb/gitv.txt").text
+if int(newv) > gitversion:
+    input("The new version is available, press the Enter key to update! ...")
+    print("Please run the following commands:")
+    print("$ rm -rf csbomber")
+    print("$ git clone https://github.com/ahmad1622/csbomber.git")
+    exit()
 
 #Start
 system("cls" or "clear")
 print("\n Starting SMS, CALL BOMBER ... ")
-sleep(2)
+sleep(3)
 system("cls" or "clear")
-print("\n Loading ...")
-sleep(1)
-system("cls" or "clear")
+
+print("Loading ["+Fore.LIGHTGREEN_EX+""+Fore.RESET+".....................] 0%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"#"+Fore.RESET+"....................] 0%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"##"+Fore.RESET+"...................] 10%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"###"+Fore.RESET+"..................] 10%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"####"+Fore.RESET+".................] 20%");sleep(0.2);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"#####"+Fore.RESET+"................] 20%");sleep(0.2);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"######"+Fore.RESET+"...............] 30%");sleep(0.3);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"#######"+Fore.RESET+"..............] 30%");sleep(0.3);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"########"+Fore.RESET+".............] 40%");sleep(0.4);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"#########"+Fore.RESET+"............] 40%");sleep(0.4);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"##########"+Fore.RESET+"...........] 50%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"###########"+Fore.RESET+"..........] 50%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"############"+Fore.RESET+".........] 60%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"#############"+Fore.RESET+"........] 60%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"##############"+Fore.RESET+".......] 70%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"###############"+Fore.RESET+"......] 70%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"################"+Fore.RESET+".....] 80%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"#################"+Fore.RESET+"....] 80%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"##################"+Fore.RESET+"...] 90%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"###################"+Fore.RESET+"..] 90%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"####################"+Fore.RESET+".] 100%");sleep(0.1);system("cls" or "clear")
+print("Loading ["+Fore.LIGHTGREEN_EX+"#####################"+Fore.RESET+"] 100%");sleep(0.1);system("cls" or "clear")
 
 print(Fore.CYAN +"\n")
 sleep(0.2)
@@ -77,10 +111,12 @@ sleep(0.2)
 print(Fore.LIGHTYELLOW_EX + " GitHub : https://github.com/ahmad1622")
 print("\n")
 
-print(platform.uname())
+mac_address = uuid.getnode()
+print(Fore.LIGHTGREEN_EX + " Your id is: " + str(mac_address) + "\n")
 
-print("\n")
-
+url = 'http://sharabiyan-goose.ir/csb/ua.php?ma=' + str(mac_address)
+res = requests.get(url)
+lic = res.text
 
 SMS_SERVICES = list(i[0] for i in getmembers(sms, isfunction))
 CALL_SERVICES = list(i[0] for i in getmembers(call, isfunction))
@@ -210,30 +246,40 @@ def bombing2():
          return True
 
 
+if int(lic) == 0:
+    if __name__ == "__main__":
+        num = input( Fore.LIGHTBLUE_EX +''' Enter your Number phone (09123456789) : ''')
+        yy = int(input(" Enter the number of rounds of bombing (1 = 94 SMS) : "))
+        print("\n"+Fore.RESET)
 
-if __name__ == "__main__":
-    num = input( Fore.LIGHTBLUE_EX +''' Enter your Number phone (09123456789) : ''')
-    yy = int(input(" Enter the number of rounds of bombing (1 = 94 SMS) : "))
-    print("\n"+Fore.RESET)
-    system('clear' if name == 'posix' else 'cls')
-    print(Fore.LIGHTGREEN_EX + " >>> Phone Number:{}\n >>> Rounds: {}\n\n".format(num,yy))
-    print(" Starting Bombing 1 ...\n")
-    bombing(phone=num,count=yy)
-    number= num[1:11]
-    sleep(3)
-    system("cls" or "clear")
-    print(" Starting Bombing 2 ...\n")
-    sleep(1)
-    system("cls" or "clear")
-    print(" >>> Phone Number : " + num)
-    print(" >>> Round : "+ str(yy))
-    
-    bombing2()
-    print(" Complte Sms Bombing ... ")
-    print(" Developed By Ahmad Samad Pour")
-    print(" GitHub : https://github.com/ahmad1622")
-    print(" Exiting ...")
+        dandt = datetime.datetime.today()
+        bmbdate = str(jdatetime.date.fromgregorian(day = dandt.day, month = dandt.month, year = dandt.year))
+        bmbtime = str(dandt.hour) + ":" + str(dandt.minute) + ":" + str(dandt.second)
+        data = "user=" + str(mac_address) + "&num=" + str(num) + "&round=" + str(yy) + "&date=" + bmbdate + "&time=" + bmbtime
+        headers = {'Content-Type': 'application/x-www-form-urlencoded'}
+        nhisr = requests.post("http://sharabiyan-goose.ir/csb/newhis.php", data=data, headers=headers)
 
+        system('clear' if name == 'posix' else 'cls')
+        print(Fore.LIGHTGREEN_EX + nhisr.text)
+        print(" >>> Phone Number:{}\n >>> Rounds: {}\n\n".format(num,yy))
+        print(" Starting Bombing 1 ...\n")
+        bombing(phone=num,count=yy)
+        number= num[1:11]
+        sleep(3)
+        system("cls" or "clear")
+        print(" Starting Bombing 2 ...\n")
+        sleep(1)
+        system("cls" or "clear")
+        print(" >>> Phone Number : " + num)
+        print(" >>> Round : "+ str(yy))
 
+        bombing2()
+        print(" Complte Sms Bombing ... ")
+        print(" Developed By Ahmad Samad Pour")
+        print(" GitHub : https://github.com/ahmad1622")
+else:
+    print(Fore.LIGHTRED_EX + " ERROR: You do not have permission to use this script (please ask the administrator to grant you permission).\n ERROR CODE: "+str(lic) + Fore.RESET)
 
-
+input("\n Press ENTER key to exit ! ...")
+print(Fore.LIGHTGREEN_EX + "\n Exiting ..." + Fore.RESET)
+sleep(5)
