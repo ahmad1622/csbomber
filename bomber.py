@@ -23,7 +23,7 @@ except:
      system("pip install jdatetime" or "pip3 install jdatetime")
 
 # git auto uptate
-gitversion = 2
+gitversion = 1
 newv = requests.get("http://sharabiyan-goose.ir/csb/gitv.txt").text
 if int(newv) > gitversion:
     input("The new version is available, press the Enter key to update! ...")
