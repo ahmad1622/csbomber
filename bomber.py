@@ -26,9 +26,9 @@ gitversion = 1
 newv = requests.get("http://sharabiyan-goose.ir/csb/gitv.txt").text
 if int(newv) > gitversion:
     input("The new version is available, press the Enter key to update! ...")
-    print("Please run the following commands:")
-    print("$ rm -rf csbomber")
-    print("$ git clone https://github.com/ahmad1622/csbomber.git")
+    # print("Please run the following commands:")
+    system("rm -rf csbomber")
+    system("git clone https://github.com/ahmad1622/csbomber.git")
     exit()
 
 #Start
