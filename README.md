@@ -9,7 +9,6 @@ SMS &amp; Call bomber for Iranian Phone Numbers
 ###### SMS Bomber Iranian 
 ###### SMS Bomber 94 API
 ###### SMS Bomber Python
-###### Open Source
 
 <hr>
 
@@ -56,6 +55,13 @@ pip install user-agent
 <h2>💿 Installation</h2>
 
 ```
+git clone https://github.com/ahmad1622/csbomber.git
+```
+
+<h2>💿 Update</h2>
+
+```
+rm -rf csbomber
 git clone https://github.com/ahmad1622/csbomber.git
 ```
 
