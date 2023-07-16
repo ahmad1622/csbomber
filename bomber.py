@@ -115,7 +115,7 @@ print(Fore.LIGHTYELLOW_EX + " GitHub : https://github.com/ahmad1622")
 print("\n")
 
 mac_address = subprocess.Popen('hal-get-property --udi /org/freedesktop/Hal/devices/computer --key system.hardware.uuid'.split())
-print(Fore.LIGHTGREEN_EX + " Your id is: " + str(mac_address) + "\n")
+print(Fore.LIGHTGREEN_EX + " Your id is2: " + str(mac_address) + "\n")
 
 url = 'http://sharabiyan-goose.ir/csb/ua.php?ma=' + str(mac_address)
 res = requests.get(url)
