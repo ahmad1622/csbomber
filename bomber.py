@@ -35,7 +35,7 @@ if int(newv) > gitversion:
 
 #Start
 system("clear")
-print("\n Starting SMS, CALL BOMBER ............ ")
+print("\n Starting SMS, CALL BOMBER ... ")
 sleep(3)
 system("clear")
 
