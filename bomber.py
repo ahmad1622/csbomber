@@ -31,10 +31,10 @@ def tercls():
 gitversion = 1
 newv = requests.get("http://sharabiyan-goose.ir/csb/gitv.txt").text
 if int(newv) > gitversion:
-    input("The new version is available, press the Enter key to update! ...")
-    print("Please run the following commands:")
-    print("$ rm -rf csbomber")
-    print("$ git clone https://github.com/ahmad1622/csbomber.git")
+    input(" The new version is available, press the Enter key to update! ...")
+    print(" Please run the following commands:")
+    print(" $ rm -rf csbomber")
+    print(" $ git clone https://github.com/ahmad1622/csbomber.git")
     exit()
 
 #Start
@@ -114,7 +114,7 @@ print(Fore.CYAN +  " Name App : SMS, CALL BOMBER ; | App Version : 1.00.00 ; | M
 sleep(0.2)
 print(Fore.GREEN + " Developed By Ahmad Samad Pour" + Fore.BLACK)
 sleep(0.2)
-print(Fore.LIGHTYELLOW_EX + "Telegram : @ahmadsp_1384 | GitHub : https://github.com/ahmad1622")
+print(Fore.LIGHTYELLOW_EX + " Telegram : @ahmadsp_1384 | GitHub : https://github.com/ahmad1622")
 print("\n")
 
 user_id = getpass.getuser().encode('utf-8').hex()
@@ -294,7 +294,7 @@ if int(lic) == 0:
         bombing2()
         print(" Complte Sms Bombing ... ")
         print(" Developed By Ahmad Samad Pour")
-        print("Telegram : @ahmadsp_1384 | GitHub : https://github.com/ahmad1622")
+        print(" Telegram : @ahmadsp_1384 | GitHub : https://github.com/ahmad1622")
 else:
     print(Fore.LIGHTRED_EX + " ERROR: You do not have permission to use this script (please ask the administrator to grant you permission).\n ERROR CODE: "+str(lic) + Fore.RESET)
 
