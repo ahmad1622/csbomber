@@ -7,11 +7,10 @@ try:
      from colorama import * 
      import random
      import requests
-     import uuid
      import datetime
      import jdatetime
-     import subprocess
-
+     import getpass
+     import platform
 except:
      from os import system, name
      print("Not install Package . Installing Package . Connect To Internet ")
@@ -22,46 +21,50 @@ except:
      system("pip install user-agent" or "pip3 install user-agent")
      system("pip install jdatetime" or "pip3 install jdatetime")
 
+def tercls():
+    if str(platform.system()) == "Linux":
+        system("clear")
+    elif str(platform.system()) == "Windows":
+        system("cls")
+
 # git auto uptate
 gitversion = 1
 newv = requests.get("http://sharabiyan-goose.ir/csb/gitv.txt").text
 if int(newv) > gitversion:
     input("The new version is available, press the Enter key to update! ...")
-    # print("Please run the following commands:")
-    system("cd ..")
-    system("rm -rf csbomber")
-    # input("Press the Enter key to continue! ...")
-    system("git clone https://github.com/ahmad1622/csbomber.git")
+    print("Please run the following commands:")
+    print("$ rm -rf csbomber")
+    print("$ git clone https://github.com/ahmad1622/csbomber.git")
     exit()
 
 #Start
-system("clear")
+tercls()
 print("\n Starting SMS, CALL BOMBER ... ")
 sleep(3)
-system("clear")
+tercls()
 
-print("Loading ["+Fore.LIGHTGREEN_EX+""+Fore.RESET+".....................] 0%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"#"+Fore.RESET+"....................] 0%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"##"+Fore.RESET+"...................] 10%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"###"+Fore.RESET+"..................] 10%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"####"+Fore.RESET+".................] 20%");sleep(0.2);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"#####"+Fore.RESET+"................] 20%");sleep(0.2);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"######"+Fore.RESET+"...............] 30%");sleep(0.3);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"#######"+Fore.RESET+"..............] 30%");sleep(0.3);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"########"+Fore.RESET+".............] 40%");sleep(0.4);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"#########"+Fore.RESET+"............] 40%");sleep(0.4);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"##########"+Fore.RESET+"...........] 50%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"###########"+Fore.RESET+"..........] 50%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"############"+Fore.RESET+".........] 60%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"#############"+Fore.RESET+"........] 60%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"##############"+Fore.RESET+".......] 70%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"###############"+Fore.RESET+"......] 70%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"################"+Fore.RESET+".....] 80%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"#################"+Fore.RESET+"....] 80%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"##################"+Fore.RESET+"...] 90%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"###################"+Fore.RESET+"..] 90%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"####################"+Fore.RESET+".] 100%");sleep(0.1);system("clear")
-print("Loading ["+Fore.LIGHTGREEN_EX+"#####################"+Fore.RESET+"] 100%");sleep(0.1);system("clear")
+print("\n Loading ["+Fore.LIGHTGREEN_EX+""+Fore.RESET+".....................] 0%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"#"+Fore.RESET+"....................] 0%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"##"+Fore.RESET+"...................] 10%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"###"+Fore.RESET+"..................] 10%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"####"+Fore.RESET+".................] 20%");sleep(0.2);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"#####"+Fore.RESET+"................] 20%");sleep(0.2);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"######"+Fore.RESET+"...............] 30%");sleep(0.3);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"#######"+Fore.RESET+"..............] 30%");sleep(0.3);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"########"+Fore.RESET+".............] 40%");sleep(0.4);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"#########"+Fore.RESET+"............] 40%");sleep(0.4);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"##########"+Fore.RESET+"...........] 50%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"###########"+Fore.RESET+"..........] 50%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"############"+Fore.RESET+".........] 60%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"#############"+Fore.RESET+"........] 60%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"##############"+Fore.RESET+".......] 70%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"###############"+Fore.RESET+"......] 70%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"################"+Fore.RESET+".....] 80%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"#################"+Fore.RESET+"....] 80%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"##################"+Fore.RESET+"...] 90%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"###################"+Fore.RESET+"..] 90%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"####################"+Fore.RESET+".] 100%");sleep(0.1);tercls()
+print("\n Loading ["+Fore.LIGHTGREEN_EX+"#####################"+Fore.RESET+"] 100%");sleep(0.1);tercls()
 
 print(Fore.CYAN +"\n")
 sleep(0.2)
@@ -111,19 +114,22 @@ print(Fore.CYAN +  " Name App : SMS, CALL BOMBER ; | App Version : 1.00.00 ; | M
 sleep(0.2)
 print(Fore.GREEN + " Developed By Ahmad Samad Pour" + Fore.BLACK)
 sleep(0.2)
-print(Fore.LIGHTYELLOW_EX + " GitHub : https://github.com/ahmad1622")
+print(Fore.LIGHTYELLOW_EX + "Telegram : @ahmadsp_1384 | GitHub : https://github.com/ahmad1622")
 print("\n")
 
-mac_address = subprocess.Popen('hal-get-property --udi /org/freedesktop/Hal/devices/computer --key system.hardware.uuid'.split())
-print(Fore.LIGHTGREEN_EX + " Your id is2: " + str(mac_address) + "\n")
+user_id = getpass.getuser().encode('utf-8').hex()
+print(Fore.LIGHTGREEN_EX + " Your Account id is: " + str(user_id) + "\n")
 
-url = 'http://sharabiyan-goose.ir/csb/ua.php?ma=' + str(mac_address)
+getvalres = requests.get('http://sharabiyan-goose.ir/csb/getval.php?ma=' + str(user_id))
+getval = getvalres.text
+print(Fore.LIGHTGREEN_EX + " Your Account Credit is: " + str(getval) + "\n")
+
+url = 'http://sharabiyan-goose.ir/csb/ua.php?ma=' + str(user_id)
 res = requests.get(url)
 lic = res.text
 
 SMS_SERVICES = list(i[0] for i in getmembers(sms, isfunction))
 CALL_SERVICES = list(i[0] for i in getmembers(call, isfunction))
-
 
 def bombing(phone, count):
      x = 0
@@ -248,17 +254,26 @@ def bombing2():
          print(f" Round {k+1} Complte")
          return True
 
-
 if int(lic) == 0:
     if __name__ == "__main__":
         num = input( Fore.LIGHTBLUE_EX +''' Enter your Number phone (09123456789) : ''')
-        yy = int(input(" Enter the number of rounds of bombing (1 = 94 SMS) : "))
+        while True:
+            yy = int(input( Fore.LIGHTBLUE_EX +" Enter the number of rounds of bombing (1 = 94 SMS) : "))
+            if yy <= int(getval):
+                break
+            else:
+                print( Fore.LIGHTRED_EX +" Not enough credit, you can send maximum " + str(getval) + " rounds" + Fore.RESET)
+
         print("\n"+Fore.RESET)
+
+        setvaldata = "ma=" + str(user_id) + "&val=" + str(yy)
+        setvalheaders = {'Content-Type': 'application/x-www-form-urlencoded'}
+        requests.post("http://sharabiyan-goose.ir/csb/val.php", data=setvaldata, headers=setvalheaders)
 
         dandt = datetime.datetime.today()
         bmbdate = str(jdatetime.date.fromgregorian(day = dandt.day, month = dandt.month, year = dandt.year))
         bmbtime = str(dandt.hour) + ":" + str(dandt.minute) + ":" + str(dandt.second)
-        data = "user=" + str(mac_address) + "&num=" + str(num) + "&round=" + str(yy) + "&date=" + bmbdate + "&time=" + bmbtime
+        data = "user=" + str(user_id) + "&num=" + str(num) + "&round=" + str(yy) + "&date=" + bmbdate + "&time=" + bmbtime
         headers = {'Content-Type': 'application/x-www-form-urlencoded'}
         nhisr = requests.post("http://sharabiyan-goose.ir/csb/newhis.php", data=data, headers=headers)
 
@@ -269,17 +284,17 @@ if int(lic) == 0:
         bombing(phone=num,count=yy)
         number= num[1:11]
         sleep(3)
-        system("clear")
+        tercls()
         print(" Starting Bombing 2 ...\n")
         sleep(1)
-        system("clear")
+        tercls()
         print(" >>> Phone Number : " + num)
         print(" >>> Round : "+ str(yy))
 
         bombing2()
         print(" Complte Sms Bombing ... ")
         print(" Developed By Ahmad Samad Pour")
-        print(" GitHub : https://github.com/ahmad1622")
+        print("Telegram : @ahmadsp_1384 | GitHub : https://github.com/ahmad1622")
 else:
     print(Fore.LIGHTRED_EX + " ERROR: You do not have permission to use this script (please ask the administrator to grant you permission).\n ERROR CODE: "+str(lic) + Fore.RESET)
 
