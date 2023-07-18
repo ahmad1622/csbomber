@@ -117,7 +117,7 @@ print(Fore.CYAN +  " App Name : SMS, CALL BOMBER | App Version : 2.0.0 | More : 
 sleep(0.2)
 print(Fore.GREEN + " Developed By Ahmad Samad Pour" + Fore.BLACK)
 sleep(0.2)
-print(Fore.LIGHTYELLOW_EX + " Telegram : @ahmadsp_1384 | GitHub : https://github.com/ahmad1622")
+print(Fore.LIGHTYELLOW_EX + " Telegram : @AhmadSP_1384 | GitHub : https://github.com/ahmad1622")
 print("\n")
 
 user_id = getpass.getuser().encode('utf-8').hex()
@@ -297,7 +297,7 @@ if int(lic) == 0:
         bombing2()
         print(" Complte Sms Bombing ... ")
         print(" Developed By Ahmad Samad Pour")
-        print(" Telegram : @ahmadsp_1384 | GitHub : https://github.com/ahmad1622")
+        print(" Telegram : @AhmadSP_1384 | GitHub : https://github.com/ahmad1622")
 else:
     print(Fore.LIGHTRED_EX + " ERROR: You do not have permission to use this script (please ask the administrator to grant you permission).\n ERROR CODE: "+str(lic) + Fore.RESET)
 
