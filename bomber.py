@@ -32,12 +32,12 @@ gitversion = 2
 newv = requests.get("http://sharabiyan-goose.ir/csb/gitv.txt").text
 if int(newv) > gitversion:
     input(" The new version is available, press the Enter key to update! ...")
-    # print(" Please run the following commands:")
-    system("cd ..")
-    system("rm -rf csbomber")
-    system("git clone https://github.com/ahmad1622/csbomber.git")
-    system("cd csbomber")
-    system("python bomber.py")
+    print(" Please run the following commands:\n")
+    print("cd ..")
+    print("rm -rf csbomber")
+    print("git clone https://github.com/ahmad1622/csbomber.git")
+    print("cd csbomber")
+    print("python bomber.py")
     exit()
 
 #Start
