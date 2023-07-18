@@ -28,7 +28,7 @@ def tercls():
         system("cls")
 
 # git auto uptate
-gitversion = 1
+gitversion = 2
 newv = requests.get("http://sharabiyan-goose.ir/csb/gitv.txt").text
 if int(newv) > gitversion:
     input(" The new version is available, press the Enter key to update! ...")
@@ -113,7 +113,7 @@ print("           ╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝     ╚═
 sleep(0.2)
 print("\n" + Fore.RESET)
 sleep(0.2)
-print(Fore.CYAN +  " Name App : SMS, CALL BOMBER ; | App Version : 1.00.00 ; | More : 100 Api ;")
+print(Fore.CYAN +  " App Name : SMS, CALL BOMBER | App Version : 2.0.0 | More : 100 Api")
 sleep(0.2)
 print(Fore.GREEN + " Developed By Ahmad Samad Pour" + Fore.BLACK)
 sleep(0.2)
