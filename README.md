@@ -68,10 +68,7 @@ git clone https://github.com/ahmad1622/csbomber.git
 <h2>💻 Script Run</h2>
 
 ```
-cd csbomber
-```
-```
-python bomber.py
+python csbomber/bomber.py
 ```
 <h2>💣 Usage</h2>
 
